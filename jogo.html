@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Jogo de Adivinhação</title>
+</head>
+
+<body>
+    <main>
+        <div class="conteudo">
+            <h2>Jogo de adivinhação</h2>
+            <br>
+            <h3>Regras:</h3>
+            <br>
+            <ul>
+                <li>Você tem cinco tentativas</li>
+                <li>Comece digitando um número inteiro positivo</li>
+                <li>O programa lhe dirá se o número correto é maior ou menor</li>
+                <li>Divirta-se!</li>
+            </ul>
+            <br>
+            <button onclick="start()">Comece por aqui</button>
+        </div>
+        
+    </main>
+</body>
+</html>
+<script>
+    function start() {
+        var correto = Math.floor(Math.random() * 101)
+        var num1 = prompt("Digite um número");
+
+        if (num1 > correto) {
+            var num2 = prompt("O número correto é menor");
+        }else if (num1 < correto) {
+            var num2 = prompt("O número correto é maior");
+        }else if (num1 == correto) {
+            var num2 = alert("Você Acertou! O número correto era " + correto);
+            window.reload()
+        }
+
+        if (num2 > correto) {
+            var num3 = prompt("O número correto é menor");
+        }else if (num2 < correto) {
+            var num3 = prompt("O número correto é maior");
+        }else if (num2 == correto) {
+            var num3 = alert("Você Acertou! O número correto era " + correto);
+            window.reload()
+        }
+
+        if (num3 > correto) {
+            var num4 = prompt("O número correto é menor");
+        }else if (num3 < correto) {
+            var num4 = prompt("O número correto é maior");
+        }else if (num3 == correto) {
+            var num4 = alert("Você Acertou! O número correto era " + correto);
+            window.reload()
+        }
+
+        if (num4 > correto) {
+            var num5 = prompt("O número correto é menor");
+        }else if (num4 < correto) {
+            var num5 = prompt("O número correto é maior");
+        }else if (num4 == correto) {
+            var num5 = alert("Você Acertou! O número correto era " + correto);
+            window.reload()
+        }else{
+            var num5 = alert("Acabaram suas chances!");
+        }
+        alert("Acabaram suas chances! O número correto era " + correto);
+    }
+</script>

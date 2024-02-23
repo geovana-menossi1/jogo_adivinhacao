@@ -1,0 +1,43 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(44, 105, 158);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.conteudo{
+    width: 50%;
+    height: 400px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(212, 224, 235);
+}
+ul{
+    height: 100px;
+}
+button{
+    width: 50%;
+    height: 40px;
+    border: 1px solid rgb(16, 53, 85);
+    border-radius: 10px;
+    background-color: rgb(44, 105, 158);
+    color: aliceblue;
+    border: 1px solid rgb(44, 105, 158);
+}
